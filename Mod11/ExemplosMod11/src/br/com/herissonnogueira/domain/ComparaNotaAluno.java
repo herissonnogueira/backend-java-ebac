@@ -1,0 +1,17 @@
+/**
+ * @author herisson.nogueira
+ */
+
+package br.com.herissonnogueira.domain;
+
+import java.util.Comparator;
+
+public class ComparaNotaAluno {
+
+    @Override
+    public int compare(Aluno o1, Aluno o2) {
+        //return Double.valueOf(o1.getNota()).compareTo(Double.valueOf(o2.getNota()));
+        //return Double.compare(o2.getNota(), o1.getNota());
+        return Double.compare(o2.getNota(), o1.getNota());
+    }
+}
